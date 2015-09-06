@@ -6,13 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "htts://github.com/newslynx/user-manual"
-  },
   "keywords": [
     "newslynx"
   ],
   "author": "Michael Keller",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newslynx/user-manual.git"
+  },
+  "bugs": {
+    "url": "https://github.com/newslynx/user-manual/issues"
+  },
+  "homepage": "https://github.com/newslynx/user-manual#readme"
 }
