@@ -5,7 +5,7 @@ I'm Merlynne Jones, the Chief Impcat Officer\* around here and I'll be showing y
 
 NewsLynx is divided into three main pages: **Settings**, the **Approval River** and your **Articles**. There are also a few key concepts we'll go discuss along the way: **Tags**, **Recipes**, **Sous Chefs** and **Metrics**. We'll walk through the main pages and discuss these concepts and features as we go!
 
-*\* Merlynne is a special breed of magical Lynx, known as an "impcat" skilled at measuring impact.*
+*\* Merlynne is a special breed of magical lynx, known as an "impcat" skilled at measuring impact.*
 
 ## A brief aside on site layout
 
@@ -65,13 +65,13 @@ Subject tags are really helpful for analysis. Once you've grouped articles under
 
 A subject tag doesn't have to be a broad topic either. You could make a subject tag for a series or package of articles as well.
 
-*Note: A future improvement would be to find ways to automate tagging of articles more. We discuss this in the [NewsLynx white paper](LINK TK) and it could be done most easily if the CMS were to put structured data onto the page itself. See the section on TKTK for more details. Similarly, nested tags is something we're also exploring.*
+*Note: A future improvement would be to find ways to automate tagging of articles more. We discuss this in the [NewsLynx white paper](LINK TK) and it could be done most easily if the CMS were to put structured data onto the page itself. See the section on TKTK for more details. Similarly, having nested tags is something we're also exploring.*
 
 #### Impact tags
 
 One of the reasons I tasked Brian and Michael with making NewsLynx was so newsrooms could better keep track of impactful **events** and group them together in meaningful ways. To do this, we have impact tags, which you create similar to subject tags. 
 
-We believe impact should be defined by each newsrooms according to its own goals. Yet, we wanted to find some commonalities or common *characteristics* among how different newsrooms were conceiving of impact. To strike this balance, impact tags are freely defined but each one has to fall into a **category** and a **level**. 
+We believe impact should be defined by each newsroom according to its own goals. Yet, we wanted to find some commonalities or common *characteristics* among how different newsrooms were conceiving of impact. To strike this balance, impact tags are freely defined but each one has to fall into a **category** and a **level**. 
 
 An impact tag can have one of four categories:
 
@@ -97,13 +97,13 @@ Now that the settings are out of the way, we can start measuring some impact! Th
 
 ### Overview
 
-The process goes something like this: you create a recipe which performs some kind of search task for mentions of your content or organization. Those searches turn up potential **events** which is what you approve or reject in the Approval River. If you approve an event, you'll be asked what article it should be assigned to and what impact tag to give it. 
+The process goes something like this: you create a recipe that performs some kind of search task for mentions of your content or organization. Those searches turn up potential **events** that you approve or reject in the Approval River. If you approve an event, you'll be asked what article it should be assigned to and what impact tag to give it. 
 
 So, in short:
 
 * **Recipes** generate **pending events**. 
-* **Pending events**, when approved, are attached to one or more articles.
-* Each **event** has one or more **impact tag** which in turn gets associated with the assigned article.
+* **Pending events**, when approved, get as attached to one or more articles by the user.
+* Each **event** has one or more **impact tag** that in turn are associated with the article to which the event was assigned.
 
 In the **Approval River**, you create **Recipes** as instances of different **Sous Chefs**. These concepts are important so let's take a second to go into them.
 
@@ -111,19 +111,19 @@ In the **Approval River**, you create **Recipes** as instances of different **So
 
 Under the hood, NewsLynx is all powered by Sous Chefs, which you can think of as individual workers each assigned to a specific type of task. When we fetch analytics from Google Alerts, that's our Google Analytics to Article Data Sous Chef doing it. When we visit the home page to see if your article is there, that's another Sous Chef. NewsLynx comes with a few Sous Chefs included in the box but, architecturally, they are separate modules that can be swapped in and out. This modular design gives NewsLynx great flexibility to adapt to the future and be customized by new abilities.
 
-When we said that Sous Chefs are tasks, that was only partly true. A Sous Chefs need parameters to go and run tasks, which is where **Recipes** come in. For example, to continue the cooking metaphor, let's say you run a pizza restaurant. You hire a Sous Chef that is really good at making pizzas. In fact, they're such an expert that they can do all sorts of pizzas! In order to get them to actually cook something though, they need more information from you, like what cheese, what kind of topics, etc. With the information from that recipe, they can go out and start making pizzas all day.
+When we said that Sous Chefs are tasks, that was only partly true. A Sous Chefs need parameters to go and run tasks, which is where **Recipes** come in. For example, to continue the cooking metaphor, let's say you run a pizza restaurant. You hire a Sous Chef that's a pizza making expert. In fact, they're such an expert that they can prepare all sorts of pizzas! In order to get them to actually cook something though, they need more information from you, like what cheese, what kind of topics, etc. With the information from that recipe, they can go out and start making pizzas all day.
 
 If you wanted to start offering salads in your restaurant, you'd need a salad Sous Chef who would accept different parameters, like what kind of lettuce, dressing and whether to include fancy pants things like farot TK SPELLING. Each Sous Chef has a list of parameters it needs before it can start cooking — that's what a Recipe is.
 
 To bring it back to NewsLynx, let's say you want to search a list of Twitter users to see if they're talking about your work. NewsLynx comes with a **Twitter List to Event** Sous Chef that accepts a variety of parameters. Here's an example:
 
-![](newslynx-page-05.png)
+![](assets/newslynx-pages-05.png)
 
 Once you fill out the parameters, that Recipe is created and run as often as you told it to. If it finds a matching hit, it will show up as a pending event waiting for approval in the Approval River.
 
 So far, we have the following Sous Chefs:
 
-* Google Alerts — Enter the RSS feed URL of a pre-existing Google Alert to have its matches show up in the approval river. <a href="#how-make-a-google-alert-recipe">Where do I get the RSS URL?</a>
+* Google Alerts — Enter the RSS feed URL of a pre-existing Google Alert to have its matches show up in the approval river.
 * Facebook page search — Monitor the text of posts by a given Facebook page.
 * Twitter search — A basic search of the Twitter search API.
 * Twitter list search — Monitor discussions among a list of Twitter users, useful if you're monitoring a group of people, like members of congress.
@@ -135,13 +135,13 @@ So far, we have the following Sous Chefs:
 
 ### Approving events 
 
-![](newslynx-page-07.png)
+![](assets/APPROVAL_RIVER_IMAGE_TK.png)
 
 Events show up in the main river view where you can approve or reject them. You can also edit any Recipe by clicking the gear icon in the Drawer. Clicking these Recipes will filter pending evens by that Recipe.
 
 When you click the green check mark to approve an event, you'll get a modal window with options on where to assign that event. 
 
-![](newslynx-page-06.png)
+![](assets/newslynx-pages-06.png)
 
 * **Date / time** — When did this event occurr.
 * **Assignee(s)** — One or more article that this event is related to
@@ -197,6 +197,6 @@ Events are displayed below the graph and you can filter them just like you filte
 
 There's more to the article page than just the graph and your events, too. We take the information in your Google Analytics, break it down and apply the same comparison figures in the comparison view. We also pull in every tweet that mentions your article and sort them by the follower count of the tweeter.
 
-As you can see, we put a lot of information into NewsLynx and we'd love to hear your feedback and how we can make it most useful to you. You can email us directly at [merlynne@newslynx.org](mailto:merlynne@newslynx.org)</a>.
+As you can see, we put a lot of information into NewsLynx and we'd love to hear your feedback and how we can make it most useful to you. You can email us directly at [merlynne@newslynx.org](mailto:merlynne@newslynx.org).
 
-If you'd like more information about the project, please visit <newslynx.org> where you can read our technical documentation and read our white paper. All of our code is open source and hosted at <github.com/newslynx>
+If you'd like more information about the project, please visit <http://newslynx.org> where you can read our technical documentation and read our white paper. All of our code is open source and hosted at <http://github.com/newslynx>
