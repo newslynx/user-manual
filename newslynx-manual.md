@@ -201,4 +201,4 @@ There's more to the article page than just the graph and your events, too. We ta
 
 As you can see, we put a lot of information into NewsLynx and we'd love to hear your feedback and how we can make it most useful to you. You can email us directly at [merlynne@newslynx.org](mailto:merlynne@newslynx.org).
 
-If you'd like more information about the project, please visit <http://newslynx.org> where you can read our technical documentation and read our white paper. All of our code is open source and hosted at <http://github.com/newslynx>
+If you'd like more information about the project, please visit [http://newslynx.org](http://newslynx.org) where you can read our technical documentation and read our white paper. All of our code is open source and hosted at [http://github.com/newslynx](http://github.com/newslynx)
