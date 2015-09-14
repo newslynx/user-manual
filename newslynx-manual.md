@@ -65,7 +65,7 @@ Subject tags are really helpful for analysis. Once you've grouped articles under
 
 A subject tag doesn't have to be a broad topic either. You could make a subject tag for a series or package of articles as well.
 
-*Note: A future improvement would be to find ways to automate tagging of articles more. We discuss this in the [NewsLynx white paper](LINK TK) and it could be done most easily if the CMS were to put structured data onto the page itself. See the section on TKTK for more details. Similarly, having nested tags is something we're also exploring.*
+*Note: A future improvement would be to find ways to automate tagging of articles more. We discuss this in the [NewsLynx white paper](https://newslynx.org) and it could be done most easily if the CMS were to put structured data onto the page itself. See the recommendations section for more details. Similarly, having nested tags is something we're also exploring.*
 
 #### Impact tags
 
@@ -113,7 +113,7 @@ Under the hood, NewsLynx is all powered by Sous Chefs, which you can think of as
 
 When we said that Sous Chefs are tasks, that was only partly true. A Sous Chefs need parameters to go and run tasks, which is where **Recipes** come in. For example, to continue the cooking metaphor, let's say you run a pizza restaurant. You hire a Sous Chef that's a pizza making expert. In fact, they're such an expert that they can prepare all sorts of pizzas! In order to get them to actually cook something though, they need more information from you, like what cheese, what kind of topics, etc. With the information from that recipe, they can go out and start making pizzas all day.
 
-If you wanted to start offering salads in your restaurant, you'd need a salad Sous Chef who would accept different parameters, like what kind of lettuce, dressing and whether to include fancy pants things like farot TK SPELLING. Each Sous Chef has a list of parameters it needs before it can start cooking — that's what a Recipe is.
+If you wanted to start offering salads in your restaurant, you'd need a salad Sous Chef who would accept different parameters, like what kind of lettuce, dressing and whether to include fancy pants things like farro. Each Sous Chef has a list of parameters it needs before it can start cooking — that's what a Recipe is.
 
 To bring it back to NewsLynx, let's say you want to search a list of Twitter users to see if they're talking about your work. NewsLynx comes with a **Twitter List to Event** Sous Chef that accepts a variety of parameters. Here's an example:
 
@@ -131,7 +131,7 @@ So far, we have the following Sous Chefs:
 * Reddit search — Useful to monitor whether your domain or an article's URL is being discussed on Reddit.
 * Reddit search content item — Requires a link to an article of yours be present on Reddit for the match to be successful.
 
-*Note: If there is another kind of service you want to integrate, you can build your own Sous Chef by following [our handy guide](TK LINK)*
+*Note: If there is another kind of service you want to integrate, you can build your own Sous Chef by following [our handy guide](http://newslynx.readthedocs.org/en/latest/sous-chefs.html)*
 
 ### Approving events 
 
@@ -170,7 +170,7 @@ Your filtered selection will appear in the drawer.
 
 ### Comparisons
 
-![](COMPARISON IMAGE TK)
+![](assets/newslynx-pages-08.png)
 
 By default, when you open the articles page, NewsLynx will load your 20 most recent articles. To change the articles in the comparison table, click their checkbox to select them — they should turn blue.
 
@@ -189,7 +189,9 @@ When would you use the median over the average? Good question. Let's say you hav
 
 ### Details
 
-Comparison are helpful to get a sense of how articles perform relatively to one another. But to view the events on each article and more specific metrics, you'll want to visit the article's **detail** page.
+![](assets/newslynx-pages-07.png)
+
+Comparisons are helpful to get a sense of how articles perform relatively to one another. But to view the events on each article and more specific metrics, you'll want to visit the article's **detail** page.
 
 Each detail page shows a time series of pageviews, Twitter mentions and Facebook shares. In the grid below the charts, you'll see your promotion for that article (home page appearances or it appeared on internal social accounts) and all corresponding events you've added. With this view you can get more context to the numbers you're seeing and get more information to help you trace back the source of large traffic spikes.
 
