@@ -135,7 +135,7 @@ So far, we have the following Sous Chefs:
 
 ### Approving events 
 
-![](assets/APPROVAL_RIVER_IMAGE_TK.png)
+![](assets/newslynx-pages-09.png)
 
 Events show up in the main river view where you can approve or reject them. You can also edit any Recipe by clicking the gear icon in the Drawer. Clicking these Recipes will filter pending evens by that Recipe.
 
