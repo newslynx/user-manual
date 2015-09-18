@@ -75,19 +75,19 @@ We believe impact should be defined by each newsroom according to its own goals.
 
 An impact tag can have one of four categories:
 
-* <span <%= tag.citation %> >Citation</span> — Someone mentioned your journalism, like in a court case, another article or a stakeholder you identified as a target for the story.
-* <span <%= tag.change %> >Change</span> — Your journalism led to something happening, like a law being passed.
-* <span <%= tag.achievement %> >Achievement</span> — Your journalism stands out in some way, like an award, or record page views.
-* <span <%= tag.promotion %> >Promotion</span> — You posted an article to a social account, you held an event around a reporting topic or a reporter appeared on a broadcast network to discuss his or her work.
-* <span <%= tag.other %> >Other</span> — Anything we might not have thought of yet.
+* Citation — Someone mentioned your journalism, like in a court case, another article or a stakeholder you identified as a target for the story.
+* Change — Your journalism led to something happening, like a law being passed.
+* Achievement — Your journalism stands out in some way, like an award, or record page views.
+* Promotion — You posted an article to a social account, you held an event around a reporting topic or a reporter appeared on a broadcast network to discuss his or her work.
+* Other — Anything we might not have thought of yet.
 
 And one of five levels:
 
-* <span <%= tag.individual %> >Individual</span> — A single person. For example, an individual changed their habit after reading your story.
-* <span <%= tag.community %> >Community</span> — A group of people, loosely defined by you. For example, TKTK.
-* <span <%= tag.institution %> >Institution</span> — A government or organization. For example, an investigation is launched based on your reporting.
-* <span <%= tag.media %> >Media</span> — A media organization that republishes, picks up or cites your work. For example, your story causes other newsrooms to look at the issue.
-* <span <%= tag.internal %> >Internal</span> — Specific to your organization. For example, a given article or project became a model for future stories or was cited by the top editors as particularly on-mission.
+* Individual — A single person. For example, an individual changed their habit after reading your story.
+* Community — A group of people, loosely defined by you. For example, TKTK.
+* Institution — A government or organization. For example, an investigation is launched based on your reporting.
+* Media — A media organization that republishes, picks up or cites your work. For example, your story causes other newsrooms to look at the issue.
+* Internal — Specific to your organization. For example, a given article or project became a model for future stories or was cited by the top editors as particularly on-mission.
 
 Importantly, impact tags don't belong to articles directly — they get assigned to **events** which are in turn assigned to articles. When you're browsing and searching articles, you can still filter articles by impact tag, category or level, however.
 
