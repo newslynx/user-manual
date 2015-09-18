@@ -47,7 +47,7 @@ NewsLynx asks for the following basic bits of info about your site
 
 * **Home page** — Used for various internal elements to know what your website is.
 * **Time zone** — To make sure we're displaying information correctly
-* **RSS Feed(s)** — This one is important. NewsLynx ingests articles based fully from one or many RSS Feeds that notify the world of your content being published. If you don't already have a comprehensive RSS Feed (or a few that when combined are comprehensive), you'll need to create one or 
+* **RSS Feed(s)** — This one is important. NewsLynx ingests articles based fully from one or many RSS Feeds that notify the world of your content being published. If you don't already have a comprehensive RSS Feed (or a few that when combined are comprehensive), you'll need to create one.
 
 ### Promotion
 
@@ -78,38 +78,38 @@ An impact tag can have one of four categories:
 * <span <%= tag.citation %> >Citation</span> — Someone mentioned your journalism, like in a court case, another article or a stakeholder you identified as a target for the story.
 * <span <%= tag.change %> >Change</span> — Your journalism led to something happening, like a law being passed.
 * <span <%= tag.achievement %> >Achievement</span> — Your journalism stands out in some way, like an award, or record page views.
-* <span <%= tag.promotion %> >Other</span> — You posted an article to a social account, you held an event around a reporting topic or a reporter appeared on a broadcast network to discuss his or her work.
+* <span <%= tag.promotion %> >Promotion</span> — You posted an article to a social account, you held an event around a reporting topic or a reporter appeared on a broadcast network to discuss his or her work.
 * <span <%= tag.other %> >Other</span> — Anything we might not have thought of yet.
 
 And one of five levels:
 
-* <span <%= tag.individual %> >Individual</span> — A single person.
-* <span <%= tag.community %> >Community</span> — A group of people, loosely defined by you.
-* <span <%= tag.institution %> >Institution</span> — A government or organization.
-* <span <%= tag.media %> >Media</span> — A media organization that republishes, picks up or cites your work
-* <span <%= tag.internal %> >Internal</span> — Specific to your organization; maybe this article or project became a model for future stories or was cited by the top editors as particularly on-mission.
+* <span <%= tag.individual %> >Individual</span> — A single person. For example, an individual changed their habit after reading your story.
+* <span <%= tag.community %> >Community</span> — A group of people, loosely defined by you. For example, TKTK.
+* <span <%= tag.institution %> >Institution</span> — A government or organization. For example, an investigation is launched based on your reporting.
+* <span <%= tag.media %> >Media</span> — A media organization that republishes, picks up or cites your work. For example, your story causes other newsrooms to look at the issue.
+* <span <%= tag.internal %> >Internal</span> — Specific to your organization. For example, a given article or project became a model for future stories or was cited by the top editors as particularly on-mission.
 
 Importantly, impact tags don't belong to articles directly — they get assigned to **events** which are in turn assigned to articles. When you're browsing and searching articles, you can still filter articles by impact tag, category or level, however.
 
 ## Approval river
 
-Now that the settings are out of the way, we can start measuring some impact! The **Approval River** is your one place to go for monitoring a number of automatic tasks that are out there, constantly crawling the web for evidence of your journalism and its effects.
+Now that the settings are out of the way, we can start measuring some impact! The **Approval River** is your one place to go for monitoring a number of automatic tasks that are out there, constantly crawling the web for evidence of your journalism and its effects. **You can think of it as an inbox of pending events that need approval before they're counted as measures of impact.
 
 ### Overview
 
-The process goes something like this: you create a recipe that performs some kind of search task for mentions of your content or organization. Those searches turn up potential **events** that you approve or reject in the Approval River. If you approve an event, you'll be asked what article it should be assigned to and what impact tag to give it. 
+The process goes something like this: you create a **recipe** — a concept we'll explain in detail later — that performs some kind of search task for mentions of your content or organization. Those searches turn up potential **events** that you approve or reject in the Approval River. If you approve an event, you'll be asked what article it should be assigned to and what impact tag to give it. 
 
 So, in short:
 
 * **Recipes** generate **pending events**. 
-* **Pending events**, when approved, get as attached to one or more articles by the user.
-* Each **event** has one or more **impact tag** that in turn are associated with the article to which the event was assigned.
+* The user approves **pending events**, and then assigns them to an article.
+* Next, the user assigns **impact tag** to the **event**.
 
 In the **Approval River**, you create **Recipes** as instances of different **Sous Chefs**. These concepts are important so let's take a second to go into them.
 
 ### Sous Chefs and Recipes
 
-Under the hood, NewsLynx is all powered by Sous Chefs, which you can think of as individual workers each assigned to a specific type of task. When we fetch analytics from Google Alerts, that's our Google Analytics to Article Data Sous Chef doing it. When we visit the home page to see if your article is there, that's another Sous Chef. NewsLynx comes with a few Sous Chefs included in the box but, architecturally, they are separate modules that can be swapped in and out. This modular design gives NewsLynx great flexibility to adapt to the future and be customized by new abilities.
+Under the hood, NewsLynx is all powered by Sous Chefs, which you can think of as individual workers each assigned to a specific type of task. When we fetch analytics from Google Analytics, that's our "Google Analytics to Article Data" Sous Chef doing it. When we visit the home page to see if your article is there, that's another Sous Chef. NewsLynx comes with a few Sous Chefs included in the box but, architecturally, they are separate modules that can be swapped in and out. This modular design gives NewsLynx great flexibility to adapt to the future and be customized by new abilities.
 
 When we said that Sous Chefs are tasks, that was only partly true. A Sous Chefs need parameters to go and run tasks, which is where **Recipes** come in. For example, to continue the cooking metaphor, let's say you run a pizza restaurant. You hire a Sous Chef that's a pizza making expert. In fact, they're such an expert that they can prepare all sorts of pizzas! In order to get them to actually cook something though, they need more information from you, like what cheese, what kind of topics, etc. With the information from that recipe, they can go out and start making pizzas all day.
 
@@ -191,7 +191,7 @@ When would you use the median over the average? Good question. Let's say you hav
 
 ![](assets/newslynx-pages-07.png)
 
-Comparisons are helpful to get a sense of how articles perform relatively to one another. But to view the events on each article and more specific metrics, you'll want to visit the article's **detail** page.
+Comparisons are helpful to get a sense of how articles perform relatively to one another. But to view the events on each article and more specific metrics, you'll want to visit the article's **detail** page. Also, to reiterate, articles are brought into NewsLynx automatically through RSS but must be tagged manually. You do that tagging for each article on its detail page here.
 
 Each detail page shows a time series of pageviews, Twitter mentions and Facebook shares. In the grid below the charts, you'll see your promotion for that article (home page appearances or it appeared on internal social accounts) and all corresponding events you've added. With this view you can get more context to the numbers you're seeing and get more information to help you trace back the source of large traffic spikes.
 
