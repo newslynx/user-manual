@@ -84,7 +84,7 @@ An impact tag can have one of four categories:
 And one of five levels:
 
 * Individual — A single person. For example, an individual changed their habit after reading your story.
-* Community — A group of people, loosely defined by you. For example, TKTK.
+* Community — A group of people, loosely defined by you. For example, a group of people interested or affected by your story has formed to discuss and share their experience.
 * Institution — A government or organization. For example, an investigation is launched based on your reporting.
 * Media — A media organization that republishes, picks up or cites your work. For example, your story causes other newsrooms to look at the issue.
 * Internal — Specific to your organization. For example, a given article or project became a model for future stories or was cited by the top editors as particularly on-mission.
@@ -111,9 +111,11 @@ In the **Approval River**, you create **Recipes** as instances of different **So
 
 Under the hood, NewsLynx is all powered by Sous Chefs, which you can think of as individual workers each assigned to a specific type of task. When we fetch analytics from Google Analytics, that's our "Google Analytics to Article Data" Sous Chef doing it. When we visit the home page to see if your article is there, that's another Sous Chef. NewsLynx comes with a few Sous Chefs included in the box but, architecturally, they are separate modules that can be swapped in and out. This modular design gives NewsLynx great flexibility to adapt to the future and be customized by new abilities.
 
-When we said that Sous Chefs are tasks, that was only partly true. A Sous Chefs need parameters to go and run tasks, which is where **Recipes** come in. For example, to continue the cooking metaphor, let's say you run a pizza restaurant. You hire a Sous Chef that's a pizza making expert. In fact, they're such an expert that they can prepare all sorts of pizzas! In order to get them to actually cook something though, they need more information from you, like what cheese, what kind of topics, etc. With the information from that recipe, they can go out and start making pizzas all day.
+Sous Chefs don't actually run themselves — which is a small but important distinction — they are more like templates that run once all the values are filled out, which is where **Recipes** come in. A Recipe is a Sous Chef template filled out with specific values. You can think of a Sous Chef as a blank form asking for certain information based on its abilities and a Recipe is one of those forms completed with specific values. 
 
-If you wanted to start offering salads in your restaurant, you'd need a salad Sous Chef who would accept different parameters, like what kind of lettuce, dressing and whether to include fancy pants things like farro. Each Sous Chef has a list of parameters it needs before it can start cooking — that's what a Recipe is.
+For example, to continue the cooking metaphor, let's say you run a pizza restaurant. You hire a Sous Chef that's a pizza making expert. In fact, they're such an expert that they can prepare all sorts of pizzas! In order to get them to actually cook something though, they need more information from you, like what cheese to use, what kind of toppings, etc. With the information from that recipe, they can go out and start making pizzas.
+
+If you wanted to start offering salads in your restaurant, you'd need a salad Sous Chef who would accept different parameters, like what kind of lettuce, dressing and whether to include fancier things like farro. Each Sous Chef has a list of parameters it needs before it can start cooking — that's what a Recipe is.
 
 To bring it back to NewsLynx, let's say you want to search a list of Twitter users to see if they're talking about your work. NewsLynx comes with a **Twitter List to Event** Sous Chef that accepts a variety of parameters. Here's an example:
 
